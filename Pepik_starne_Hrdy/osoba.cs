@@ -8,7 +8,11 @@ namespace Pepik_starne_Hrdy
 {
     internal class osoba
     {
-        public int Age { get => vek; }
-        public int vek;
+        public int Age { get; private set; }
+        public void Starnout() 
+        {
+            Age++;
+        }
     }
+
 }

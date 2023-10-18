@@ -20,11 +20,13 @@ namespace Pepik_starne_Hrdy
     /// </summary>
     public partial class MainWindow : Window
     {
-        private int number = 0;
+        private osoba Pepa;
+
 
         public MainWindow()
         {
             InitializeComponent();
+            Pepa = new osoba();
         }
 
         
@@ -33,14 +35,14 @@ namespace Pepik_starne_Hrdy
 
         private void IncreaseButton_Click(object sender, RoutedEventArgs e)
         {
-           number++;
-           vystupVeku.Text = number.ToString();
-
-            if (number >= 100)
+            Pepa.Starnout();
+            vystupVeku.Text = Pepa.Age.ToString();
+            
+            if (Pepa.Age > 100)
             {
-                 
-                vystupVeku.Text = "Už je asi mrtvej";
+                vystupVeku.Text = "Už je asi tuhej";
             }
+            
         }
         
         
