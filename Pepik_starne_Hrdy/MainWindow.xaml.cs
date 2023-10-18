@@ -20,9 +20,29 @@ namespace Pepik_starne_Hrdy
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int number = 0;
+
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        
+
+        
+
+        private void IncreaseButton_Click(object sender, RoutedEventArgs e)
+        {
+           number++;
+           vystupVeku.Text = number.ToString();
+
+            if (number >= 100)
+            {
+                 
+                vystupVeku.Text = "Už je asi mrtvej";
+            }
+        }
+        
+        
     }
 }

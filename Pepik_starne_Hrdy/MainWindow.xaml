@@ -8,8 +8,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Label x:Name="Pepa" Content="Pepa" HorizontalAlignment="Left" Height="74" Margin="77,36,0,0" VerticalAlignment="Top" Width="114" FontSize="48"/>
-        <Button x:Name="IncreaseButton" Content="Zestárni už konečně!" HorizontalAlignment="Left" Height="47" Margin="77,147,0,0" VerticalAlignment="Top" Width="205" FontSize="20"/>
-        <TextBlock x:Name="TextOutput" HorizontalAlignment="Left" Height="202" Margin="344,73,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="337"/>
+        <Button x:Name="IncreaseButton" Content="Zestárni už konečně!" HorizontalAlignment="Left" Height="47" Margin="77,147,0,0" VerticalAlignment="Top" Width="205" FontSize="20" Click="IncreaseButton_Click"/>
+        <TextBlock x:Name="vystupVeku" HorizontalAlignment="Left" Height="137" Margin="570,155,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="208" FontSize="36"/>
+        <Label Content="Pepův aktuální věk je:" HorizontalAlignment="Left" Height="47" Margin="319,155,0,0" VerticalAlignment="Top" Width="246" FontSize="24"/>
 
     </Grid>
 </Window>
